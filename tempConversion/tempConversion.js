@@ -3,7 +3,7 @@ const ftoc = function(temp) {
   if (Number.isInteger(finalTemp)){
     return finalTemp;
   }  
-  return Number(finalTemp.toFixed(1));
+  return Math.round(finalTemp * 10)/10;
 }
 
 const ctof = function(temp) {
@@ -11,7 +11,7 @@ const ctof = function(temp) {
   if (Number.isInteger(finalTemp)){
     return finalTemp;
   }  
-  return Number(finalTemp.toFixed(1));
+  return Math.round(finalTemp * 10)/10;
 }
 
 module.exports = {
